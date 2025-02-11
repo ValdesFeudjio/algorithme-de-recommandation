@@ -127,6 +127,8 @@ def complete(M_train, k):
 
 '''
 Implementation de la méthode item based collaborative filtering
+
+le but de cette méthode est de recommander des films en utilisant les preferences de l'utilsateur et en proposant des films similaires à ceux qu'il a déjà noté.
 '''
 
 # utilise les sous-fonctions
