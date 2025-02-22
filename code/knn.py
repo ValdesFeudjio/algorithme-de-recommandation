@@ -51,7 +51,10 @@ def cosinus(M_train, u1, u2): # calcule la similarité cosinus entre deux utilis
 ##============================================
 
 '''
-le but de cette fonction est de compléter les notes de l'utilisateur id_user en utilisant la stratégie des k plus proches utilisateurs. de sorte que si l'utilisateur id_user a déjà noté un film, la fonction retourne la note de l'utilisateur id_user pour ce film. sinon, elle retourne la note prédite de l'utilisateur id_user pour ce film en utilisant la stratégie des k plus proches utilisateurs.
+le but de cette fonction est de compléter les notes de l'utilisateur id_user en utilisant la stratégie des
+ k plus proches utilisateurs. de sorte que si l'utilisateur id_user a déjà noté un film, la fonction retourne la 
+ note de l'utilisateur id_user pour ce film. sinon, elle retourne la note prédite de l'utilisateur id_user pour 
+ ce film en utilisant la stratégie des k plus proches utilisateurs.
 '''
 
 def complete_a_user(M_train, id_user, k):
@@ -93,7 +96,8 @@ def complete_a_user(M_train, id_user, k):
 ## knn.recommend(M_train, id_user, new=True, k=10)
 ##============================================
 '''
-la fonction recommend prend en entrée une matrice M_train, un id d'utilisateur id_user, un booléen new et un entier k. et permet de recommander un film à l'utilisateur id_user. de sorte que si new=True, le code recommande le film non noté par l'utilisateur id_user qui a la moyenne de score la plus élevée 
+la fonction recommend prend en entrée une matrice M_train, un id d'utilisateur id_user, un booléen new et un entier k 
+et permet de recommander un film à l'utilisateur id_user. de sorte que si new=True, le code recommande le film non noté par l'utilisateur id_user qui a la moyenne de score la plus élevée 
 Sinon l'utiliateur se voit recomandé le film ayant en utilisant la stratégie des k plus proches.
 '''
 def recommend(M_train, id_user, new=True, k=10):
@@ -114,7 +118,8 @@ def recommend(M_train, id_user, new=True, k=10):
 ##============================================
 
 '''
-Le but de la fonction complete est de compléter la matrice M_train en remplaçant les valeurs manquantes par les notes prédites des utilisateurs en utilisant la stratégie des k plus proches utilisateurs.
+Le but de la fonction complete est de compléter la matrice M_train en remplaçant les valeurs manquantes par les 
+notes prédites des utilisateurs en utilisant la stratégie des k plus proches utilisateurs.
 '''
 
 def complete(M_train, k):
@@ -128,7 +133,8 @@ def complete(M_train, k):
 '''
 Implementation de la méthode item based collaborative filtering
 
-le but de cette méthode est de recommander des films en utilisant les preferences de l'utilsateur et en proposant des films similaires à ceux qu'il a déjà noté.
+le but de cette méthode est de recommander des films en utilisant les preferences de l'utilsateur et en proposant 
+des films similaires à ceux qu'il a déjà noté.
 '''
 
 # utilise les sous-fonctions

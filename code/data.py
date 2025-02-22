@@ -60,7 +60,7 @@ def load_data(tiny=False):
 # movie.title(id)
 ##============================================
 def movie_title(id):
-    data = pd.read_csv("data/u.item", names=["id", "title", "release.date", "video.release.date", "unknown", "Action", "Adventure", "Animation", "Children.s", "Comedy", "Crime", "Documentary", "Drama", "Fantasy", "Film.Noir", "Horror", "Musical", "Mystery", "Romance", "Sci.Fi", "Thriller", "War", "Western"], sep='|', encoding='latin1')
+    data = pd.read_csv("../data/u.item", names=["id", "title", "release.date", "video.release.date", "unknown", "Action", "Adventure", "Animation", "Children.s", "Comedy", "Crime", "Documentary", "Drama", "Fantasy", "Film.Noir", "Horror", "Musical", "Mystery", "Romance", "Sci.Fi", "Thriller", "War", "Western"], sep='|', encoding='latin1')
     try:
       return [data['title'][i] for i in id]
     except TypeError as e:
